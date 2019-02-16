@@ -42,7 +42,20 @@
 						</p>
 					</section>
 					<section>
-						Slide 2
+						In order to learn about generators we first need to understand a few basic concepts:
+						<ol>
+							<li>Iterators
+							<ul><li>Any object that wants to be an iterator must implement following methods.
+1. __iter__: Method that is called on initialization of an iterator.
+2.next: The iterator next method should return the next value for the iterable. When an iterator is used with a ‘for in’ loop, the for loop implicitly calls next() on the iterator object. This method should raise a StopIteration to signal the end of the iteration.</li></ul>
+							<li>Yield keyword
+								<ul><li>The yield statement suspends function’s execution and sends a 
+									value back to caller, but retains enough state to enable 
+									function to resume where it is left off. When resumed, the 
+									function continues execution immediately after the last yield 
+									run.</li></ul>
+									</li>
+						</ol>
 					</section>
 				</section>
 				<section>
