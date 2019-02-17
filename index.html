@@ -20,6 +20,20 @@
 			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
+		<style>
+			a:link, a:visited {
+			  background-color: brown;
+			  color: white;
+			  padding: 15px 25px;
+			  text-align: center;
+			  text-decoration: none;
+			  display: inline-block;
+			}
+
+			a:hover, a:active {
+			  background-color: red;
+			}
+		</style>
 	</head>
 	<body>
 		<div class="reveal">
@@ -45,9 +59,11 @@
 						In order to learn about generators we first need to understand a few basic concepts:
 						<ol>
 							<li>Iterators
-							<ul><li>Any object that wants to be an iterator must implement following methods.
+							<ul><li><font size="4">Any object that wants to be an iterator must implement following methods.
 								1. __iter__: Method that is called on initialization of an iterator.
-								2.next: The iterator next method should return the next value for the iterable. When an iterator is used with a ‘for in’ loop, the for loop implicitly calls next() on the iterator object. This method should raise a StopIteration to signal the end of the iteration.</li></ul>
+								2.next: The iterator next method should return the next value for the iterable. 
+								When an iterator is used with a ‘for in’ loop, the for loop implicitly calls next() 
+								on the iterator object.</font></li></ul>
 					</section>
 				</section>
 				<section>
@@ -57,11 +73,11 @@
 					</section>
 					<section>
 						<li>Yield keyword
-								<ul><li>The yield statement suspends function’s execution and sends a 
+								<ul><li><font size="4">The yield statement suspends function’s execution and sends a 
 									value back to caller, but retains enough state to enable 
 									function to resume where it is left off. When resumed, the 
 									function continues execution immediately after the last yield 
-									run.</li></ul>
+									run.</font></li></ul>
 									</li>
 						</ol>
 					</section>
@@ -72,8 +88,10 @@
 						<img src="decorators_perfect_square.jpg"></img>
 					</section>
 					<section>
-						<font size="3"><b>Generator-Function :</b> A generator-function is defined like a normal function, but whenever it needs to generate a value, it does so with the yield keyword rather than return. If the body of a def contains yield, the function automatically becomes a generator function.</font>
-						<font size="3"><b>Generator-Object :</b> Generator functions return a generator object.</font>
+						<font size="5"><b>Generator-Function :</b> A generator-function is defined like a normal function, 
+							but whenever it needs to generate a value, it does so with the yield keyword rather than return. 
+							If the body of a def contains yield, the function automatically becomes a generator function.</font>
+						<font size="5"><b>Generator-Object :</b> Generator functions return a generator object.</font>
 					</section>
 				</section>
 				<section>
@@ -82,7 +100,7 @@
 						<img src="decorators_with_arguments.jpg"></img>
 					</section>
 					<section>
-						Slide 8
+						<a href="https://github.com/bhavya-kashyap/reveal.js/blob/master/decorators_perfect_square.mp4" target="_blank">Generators basics</a>
 					</section>
 				</section>
 				<section>
